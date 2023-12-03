@@ -1,4 +1,4 @@
-import "../../styles/Navbar.scss";
+import "@styles/navbar.scss";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 
