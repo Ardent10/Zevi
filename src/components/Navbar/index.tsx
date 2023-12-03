@@ -1,6 +1,7 @@
-import "@styles/Navbar.scss";
+import "../../styles/Navbar.scss";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
+
 export function Navbar() {
   const location = useLocation();
 
