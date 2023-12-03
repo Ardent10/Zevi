@@ -1,0 +1,114 @@
+@import "./_variables.scss";
+@import "navbar";
+
+.bg-container {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgba(164, 230, 252, 0.2);
+}
+
+.bg {
+  background-image: $background-hero;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-search-bar-container {
+  // @extend .search-bar-container;
+  position: relative;
+}
+
+.home-search-bar {
+  @extend .search-bar;
+  height: 2rem;
+  width: 60vw;
+  font-size: 24px;
+  background: #fff;
+  border: none;
+  outline: none;
+}
+
+.home-search-icon {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  right: 2%;
+  top: 20%;
+}
+
+.home-search-results-container {
+  width: 75vw;
+  height: auto;
+  .title {
+    font-weight: 600;
+  }
+  .latest-trends {
+    margin-top: 1rem;
+    background: rgb(255, 255, 255);
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: column;
+    
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 2rem;
+    }
+    
+    .card {
+      
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+      
+      .card-img {
+      border-radius: 8px;
+       width: 8rem;
+       height: 10rem;
+       object-fit: cover;
+      }
+
+      .card-title {
+        font-size: 11px;
+        font-weight: 500;
+      }
+    }
+  }
+  
+  .popular-suggestions {
+    background: rgb(255, 255, 255);
+    padding: 15px 30px;
+    .suggestion-list {
+      list-style: none;
+      padding: 0;
+    }
+    .suggestion-title {
+      font-size: 14px;
+      &:hover {
+        background-color: #d6d2d2;
+        cursor: pointer;
+      }
+    }
+  }
+}

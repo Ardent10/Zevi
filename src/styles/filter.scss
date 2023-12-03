@@ -1,0 +1,31 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.filter-title {
+  padding: 5px;
+}
+
+.filter-checkbox {
+  transform: scale(1.5);
+}
+.filter-options {
+  @extend .filter;
+  padding: 5px;
+}
+.option {
+  @extend .filter;
+  flex-direction: row;
+}
+
+.rating{
+    @extend .filter;
+}

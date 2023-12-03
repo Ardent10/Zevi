@@ -1,0 +1,14 @@
+$font-stack: Poppins, Roboto, Helvetica, Arial, sans-serif;
+
+body {
+  font: 100% $font-stack;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+}

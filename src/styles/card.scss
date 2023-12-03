@@ -1,0 +1,90 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  // min-height: 35vh;
+  width: 16vw;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+  padding: 0 0 10px 0;
+
+  &:hover {
+    transform: scale(1.03);
+
+    .view-product-btn {
+      display: block;
+      opacity: 0.9;
+      cursor: pointer;
+      pointer-events: auto;
+      position: absolute;
+      background-color: #899cf3;
+      top: 10.8rem;
+      width: 100%;
+      color: #ffffff;
+      border: none;
+      padding: 8px;
+      font-size: 14px;
+      margin-top: 8px;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+}
+.view-product-btn {
+  display: none;
+  pointer-events: none;
+}
+
+.wishlist {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px;
+}
+
+.wishlist-img {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.card-img {
+  border-radius: 4px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: relative;
+}
+
+.price-container {
+  display: flex;
+  text-align: left;
+}
+
+.card-content {
+  z-index: 2;
+  padding: 16px 0;
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.card-price {
+  font-size: 18px;
+  color: rgb(85, 85, 207);
+  font-weight: 500;
+}
+
+.card-discount {
+  font-size: 18px;
+  text-decoration: line-through;
+  color: #999;
+}
+
+.card-rating {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #4caf50; /* Green color for rating */
+}

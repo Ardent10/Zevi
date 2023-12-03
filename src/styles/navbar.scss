@@ -1,0 +1,54 @@
+@import "variables";
+
+.navbar {
+  z-index: 2;
+  height: auto;
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  width: -webkit-fill-available;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.search-bar-container {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.search-bar {
+  width: $search-bar-width;
+  height: $search-bar-height;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #aeacac;
+  outline: none;
+  background: $search-bar-background;
+}
+
+.search-icon {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.logo {
+  padding-right: 20px;
+  height: 2rem;
+  margin-left: auto;
+}

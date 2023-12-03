@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  margin-top: 8rem;
+}
+
+.filters-container {
+  width: 17rem;
+
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+  h2{
+   font-weight: 500;
+   font-size: 28px; 
+  }
+}
+
+.products-container {
+  flex-grow: 1;
+  padding: 10px 30px;
+}
+
+.products {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
