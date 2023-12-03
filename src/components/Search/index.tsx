@@ -1,11 +1,10 @@
-import { useState } from "react";
 import { Controller } from "react-hook-form";
 
 interface SearchProps {
   type: string;
   placeholder: string;
   disable: boolean;
-  handleChange?: any;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   control?: any;
   name: string;
 }
@@ -17,17 +16,11 @@ export default function Search({
   control,
   name,
 }: SearchProps) {
-  const [searchInput, setSearchInput] = useState();
-
   return (
     <Controller
       name={name}
       control={control}
-      render={({
-        field: { onChange, onBlur, value, ref },
-        fieldState: { isTouched, isDirty, error },
-        formState: { isValid },
-      }) => {
+      render={({ field: { onChange, value } }) => {
         return (
           <input
             type={type}
